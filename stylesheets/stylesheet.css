@@ -86,7 +86,7 @@ header h2 {
 }
 
 #container {
-  background: transparent url(../images/osi-logo-large.png) 20% 0 no-repeat;
+  background: transparent url(../images/osi-logo-large.png) 20% 1.5em no-repeat;
   min-height: 595px;
 }
 
@@ -371,3 +371,35 @@ footer a:hover {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {}
+
+
+/* CSS page-curl */
+#curl{
+    background:#f0c url(../images/curl-bg.png) no-repeat -216px 0;
+    overflow:hidden;
+    width:34px;
+    height:34px;
+    position:fixed;
+    top:0;
+    right:0;
+}
+#curl:hover{
+    background-position: 0 0;
+    width:256px;
+    height:256px;
+    -webkit-transition: ease 1s;
+    -moz-transition: ease 1s;
+}
+#curl a img{
+    width:40px;
+    height:40px;
+    position:fixed;
+    top:0;
+    right:0;
+}
+#curl a img:hover{
+    width:300px;
+    height:300px;
+     -webkit-transition: ease 1s;
+     -moz-transition: ease 1s;
+}
